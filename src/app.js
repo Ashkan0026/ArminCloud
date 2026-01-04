@@ -3,7 +3,8 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/api/companies", require("./routes/company.routes"));
-app.use("/api/users", require("./routes/user.routes"));
+app.use("/companies", require("./routes/company.routes"));
+app.use("/users", require("./routes/user.routes"));
+app.use("/machines", require("./routes/machine.routes"));
 
 module.exports = app;

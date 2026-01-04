@@ -10,7 +10,7 @@ const { sequelize, Role } = require("./models");
     await Role.findOrCreate({ where: { name: "user" } });
 
     app.listen(3000, () => {
-      console.log("🚀 Server running on port 3000");
+      console.log("Server running on port 3000");
     });
   } catch (error) {
     console.error(error);
